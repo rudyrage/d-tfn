@@ -76,74 +76,12 @@
   - `cat file.txt` - Display the content of `file.txt`.
   - `cat file1.txt file2.txt` - Concatenate and display both files.
 
-### `more`
-
-- **Description**: Views file content one page at a time.
-- **Usage**: `more file_name`
-- **Examples**:
-  - `more file.txt` - View the content of `file.txt` page by page.
-
 ### `less`
 
 - **Description**: Views file content with backward and forward navigation.
 - **Usage**: `less file_name`
 - **Examples**:
   - `less file.txt` - View and navigate through `file.txt`.
-
-### `head`
-
-- **Description**: Displays the first few lines of a file.
-- **Usage**: `head [options] file_name`
-- **Examples**:
-  - `head file.txt` - Display the first 10 lines of `file.txt`.
-  - `head -n 5 file.txt` - Display the first 5 lines.
-
-### `tail`
-
-- **Description**: Displays the last few lines of a file.
-- **Usage**: `tail [options] file_name`
-- **Examples**:
-  - `tail file.txt` - Display the last 10 lines of `file.txt`.
-  - `tail -n 5 file.txt` - Display the last 5 lines.
-
-### `nano`
-
-- **Description**: A simple text editor.
-- **Usage**: `nano file_name`
-- **Examples**:
-  - `nano file.txt` - Open `file.txt` in the `nano` editor.
-
-## System Information
-
-### `uname`
-
-- **Description**: Displays system information.
-- **Usage**: `uname [options]`
-- **Examples**:
-  - `uname -a` - Display all available system information.
-
-### `top`
-
-- **Description**: Displays real-time system processes and resource usage.
-- **Usage**: `top`
-- **Examples**:
-  - `top` - View system processes and performance metrics.
-
-### `df`
-
-- **Description**: Shows disk space usage.
-- **Usage**: `df [options]`
-- **Examples**:
-  - `df` - Display disk space usage for all filesystems.
-  - `df -h` - Display sizes in human-readable format.
-
-### `du`
-
-- **Description**: Shows disk usage of files and directories.
-- **Usage**: `du [options] [directory]`
-- **Examples**:
-  - `du` - Display disk usage of the current directory.
-  - `du -sh /home/user` - Display the total disk usage of `/home/user`.
 
 ### `free`
 
@@ -162,21 +100,6 @@
 - **Examples**:
   - `ps` - Display processes for the current user.
   - `ps aux` - Display detailed information about all processes.
-
-### `top`
-
-- **Description**: Real-time view of system processes.
-- **Usage**: `top`
-- **Examples**:
-  - `top` - Show active processes and system usage.
-
-### `kill`
-
-- **Description**: Sends signals to processes, typically to terminate them.
-- **Usage**: `kill [options] pid`
-- **Examples**:
-  - `kill 1234` - Terminate process with PID `1234`.
-  - `kill -9 1234` - Forcefully terminate process with PID `1234`.
 
 ## Networking
 
@@ -224,14 +147,6 @@
 - **Examples**:
   - `adduser newuser` - Add a new user named `newuser`.
 
-### `passwd`
-
-- **Description**: Changes user passwords.
-- **Usage**: `passwd [username]`
-- **Examples**:
-  - `passwd` - Change the password of the current user.
-  - `passwd newuser` - Change the password of `newuser`.
-
 ## File Permissions
 
 ### `chmod`
@@ -240,28 +155,3 @@
 - **Usage**: `chmod [options] mode file_name`
 - **Examples**:
   - `chmod 755 file.txt` - Set permissions of `file.txt` to `rwxr-xr-x`.
-
-### `chown`
-
-- **Description**: Changes file owner and group.
-- **Usage**: `chown [options] owner:group file_name`
-- **Examples**:
-  - `chown user:group file.txt` - Change the owner and group of `file.txt`.
-
-## Archiving and Compression
-
-### `tar`
-
-- **Description**: Archives files into a single file.
-- **Usage**: `tar [options] archive_file file_names`
-- **Examples**:
-  - `tar -cvf archive.tar file1 file2` - Create a tarball `archive.tar`.
-  - `tar -xvf archive.tar` - Extract files from `archive.tar`.
-
-### `gzip`
-
-- **Description**: Compresses files using the gzip algorithm.
-- **Usage**: `gzip [options] file_name`
-- **Examples**:
-  - `gzip file.txt` - Compress `file.txt` into `file.txt.gz`.
-  - `gzip -d file.txt.gz` - Decompress `file.txt.gz`.
