@@ -124,13 +124,6 @@
 - **Examples**:
   - `netstat -tuln` - Display listening ports and network connections.
 
-### `ssh`
-
-- **Description**: Connects to a remote host securely.
-- **Usage**: `ssh [user@]hostname`
-- **Examples**:
-  - `ssh user@remote_host` - Connect to `remote_host` as `user`.
-
 ## User Management
 
 ### `whoami`
