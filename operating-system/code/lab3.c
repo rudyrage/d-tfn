@@ -29,7 +29,7 @@ void *producer(void *arg) {
     pthread_mutex_unlock(&mutex);
     sem_post(&full);
 
-    usleep(rand() % 100000); // Simulate variable production time
+    usleep(rand() % 100000);
   }
   return NULL;
 }
@@ -46,7 +46,7 @@ void *consumer(void *arg) {
     pthread_mutex_unlock(&mutex);
     sem_post(&empty);
 
-    usleep(rand() % 1000000); // Simulate variable consumption time
+    usleep(rand() % 50000);
   }
   return NULL;
 }
